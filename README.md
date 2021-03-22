@@ -6,7 +6,11 @@ Tema presupune implementarea unei variante simplificate a jocului Bow and Arrow.
       Framework complet: https://github.com/UPB-Graphics/Framework-EGC
       Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
 
-
+      Arcul poate fi controlat prin:
+            - W, S - deplasare sus-jos pe axa Oy
+            - Directia de tragere a arcului se poate ajusta prin miscarea mouse-ului
+            - Arcul va fi mereu rotit astfel incat sageata se va deplasa catre pozitia curenta a mouse-ului.
+            - Viteza de deplasare a sagetii este determinata de timpul de apasare al butonului mouse-ului.
 
 Am inceput implementarea prin crearea obiectelor din joc. Pentru crearea arcului
 am considerat triunghiuri care prin unire sa creeze cercul. Am aflat unghiul pe care
