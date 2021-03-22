@@ -1,16 +1,10 @@
 # Tema1EGC-BowAndArrow
 [Tema1 - Elemente de grafica pe calculator] 
 
-Tema1 EGC - Bow & Arrow
-Gherasie Stefania Elena - 333CB
-
-
 Tema presupune implementarea unei variante simplificate a jocului Bow and Arrow. 
 
-Framework-ul complet se afla la: https://github.com/UPB-Graphics/Framework-EGC
-
-Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
-
+      Framework complet: https://github.com/UPB-Graphics/Framework-EGC
+      Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
 
 
 
