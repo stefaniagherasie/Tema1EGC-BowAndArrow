@@ -5,7 +5,14 @@ Tema1 EGC - Bow & Arrow
 Gherasie Stefania Elena - 333CB
 
 
-Tema presupune implementarea unei variante simplificate a jocului Bow and Arrow. Framework-ul complet se afla la: https://github.com/UPB-Graphics/Framework-EGC
+Tema presupune implementarea unei variante simplificate a jocului Bow and Arrow. 
+
+Framework-ul complet se afla la: https://github.com/UPB-Graphics/Framework-EGC
+
+Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
+
+
+
 
 Am inceput implementarea prin crearea obiectelor din joc. Pentru crearea arcului
 am considerat triunghiuri care prin unire sa creeze cercul. Am aflat unghiul pe care
