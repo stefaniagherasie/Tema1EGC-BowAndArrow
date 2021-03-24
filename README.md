@@ -13,6 +13,8 @@ Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
             - Arcul va fi mereu rotit astfel incat sageata se va deplasa catre pozitia curenta a mouse-ului.
             - Viteza de deplasare a sagetii este determinata de timpul de apasare al butonului mouse-ului.
 
+#### IMPLEMENTARE
+
 Am inceput implementarea prin crearea obiectelor din joc. Pentru crearea arcului
 am considerat triunghiuri care prin unire sa creeze cercul. Am aflat unghiul pe care
 l-ar avea un triungi pentru o impartire a cercului in numTriangles. Apoi am considerat
