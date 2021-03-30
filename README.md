@@ -2,10 +2,8 @@
 [Tema1 - Elemente de grafica pe calculator] 
 
 Tema presupune implementarea unei variante simplificate a jocului Bow and Arrow. <br>
+Framework complet: https://github.com/UPB-Graphics/Framework-EGC <br>
 Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
-
-      Framework complet: https://github.com/UPB-Graphics/Framework-EGC
-      Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
 
       Arcul poate fi controlat prin:
             - W, S - deplasare sus-jos pe axa Oy
