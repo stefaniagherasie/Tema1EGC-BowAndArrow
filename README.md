@@ -2,43 +2,45 @@
 [Tema1 - Elemente de grafica pe calculator] 
 
 Tema presupune implementarea unei variante simplificate a jocului Bow and Arrow. <br>
+> Framework complet: [aici](https://github.com/UPB-Graphics/Framework-EGC) <br>
+> Enunt: [aici](https://ocw.cs.pub.ro/courses/egc/teme/2020/01)
 
-      Framework complet: https://github.com/UPB-Graphics/Framework-EGC
-      Enunt: https://ocw.cs.pub.ro/courses/egc/teme/2020/01
+#### CONTROLUL JOCULUI
 
-      Arcul poate fi controlat prin:
-            - W, S - deplasare sus-jos pe axa Oy
-            - Directia de tragere a arcului se poate ajusta prin miscarea mouse-ului
-            - Arcul va fi mereu rotit astfel incat sageata se va deplasa catre pozitia curenta a mouse-ului.
-            - Viteza de deplasare a sagetii este determinata de timpul de apasare al butonului mouse-ului.
+> Arcul poate fi controlat prin:
+> - ```W / S``` - deplasare sus-jos pe axa Oy
+> - Directia de tragere a arcului se poate ajusta prin miscarea mouse-ului
+> - Arcul va fi mereu rotit astfel incat sageata se va deplasa catre pozitia curenta a mouse-ului.
+> - Viteza de deplasare a sagetii este determinata de timpul de apasare al butonului mouse-ului.
 
-#### IMPLEMENTARE
+#### CONSTRUCTIA OBIECTELOR
 
-Am inceput implementarea prin crearea obiectelor din joc. Pentru crearea arcului
+Am inceput implementarea prin crearea obiectelor din joc. Pentru crearea **arcului**
 am considerat triunghiuri care prin unire sa creeze cercul. Am aflat unghiul pe care
-l-ar avea un triungi pentru o impartire a cercului in numTriangles. Apoi am considerat
+l-ar avea un triungi pentru o impartire a cercului in triunghiuri. Apoi am considerat
 punctul (x, y) ca fiind initial si am calculat restul de puncte aplicand rotirea 
-acestuia cu unghiul gasit. S-au luat doar punctele care se afla de partea pozitiva 
-a axei Ox pentru a aparea doar un semicerc. Pentru crearea sagetii am folosit o linie 
+acestuia cu unghiul gasit. Pentru crearea **sagetii** am folosit o linie 
 si un triunghi dispus la capatul liniei.
 
-Pentru crearea balonului am procedat in mod asemanator, luand tot cercul de aceasta 
+Pentru crearea **balonului** am procedat in mod asemanator, luand tot cercul de aceasta 
 data si formand si codita balonului, care e o polilinie. La randarea balonului,
 am aplicat o scalare pe Oy pentru a obtine aspectul alungit al balonului. Pentru 
-crearea suriken-ului am dat coordonatele unor puncte care formeaza exact triunghiurile
+crearea **suriken-ului** am dat coordonatele unor puncte care formeaza exact triunghiurile
 in modul dorit, urmand sa le unesc pentru a obtine forma suriken-ului.
 
-Pentru crearea PowerBar-ului si al ScoreBar-ului am folosit un patrat care este scalat
+Pentru crearea **PowerBar-ului** si al **ScoreBar-ului** am folosit un patrat care este scalat
 ulterior, iar pentru aratarea vietilor ramase am folosit un patrat rotit, obtinand
 un romb, care urmeaza sa fie usor scalat.
+<br>
 
+#### IMPLEMENTAREA JOCULUI
 Arcul este pozitionat la (0, 360) initial, putand fi miscat in sus si in jos pe axa
-Oy la apasarea tastelor W sau S. Acesta se roteste dupa pozitia mouse-ului.
+Oy la apasarea tastelor ```W / S```. Acesta se roteste dupa pozitia mouse-ului.
 Sageata este si ea pozitionata ca arcul si se poate roti dupa mouse. Unghiul este 
 calculat in SetAngleArrow() folosind functia arctan in triunghiul dreptunghic format
 de coordonatele sagetii si mouse-ului. Sageata se poate elibera la apasarea pe mouse,
 viteza ei crescand cand se apasa mai mult pe mouse. Pentru miscarea sagatii dupa 
-pozitia mouse-ului se creste tx-ul de la translatie, ty-ul fiind tx*tan(angleArrow),
+pozitia mouse-ului se creste tx-ul de la translatie, ty-ul fiind ```tx*tan(angleArrow)```,
 astfel cei 2 factori crescand uniform si sageata pastrandu-si orientarea.
 
 Pentru suriken si balon se realizeaza miscarea specifica, testandu-se constant 
@@ -61,4 +63,4 @@ si cercul incadrator al obiectului. Pentru coliziunea suriken-arc se verifica ce
 incadratoare ale celor 2 obiecte.
 
 Cand jucatorul pierde toate cele 3 vieti, jocul se incheie prin inchiderea ferestrei si 
-afisarea in consola a mesajului "Game over" si a scorului obtinut.
+afisarea in consola a mesajului ```"Game over"``` si a scorului obtinut.
