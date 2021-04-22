@@ -12,7 +12,7 @@ Tema presupune implementarea unei variante simplificate a jocului Bow and Arrow.
 > - Arcul va fi mereu rotit astfel incat sageata se va deplasa catre pozitia curenta a mouse-ului.
 > - Viteza de deplasare a sagetii este determinata de timpul de apasare al butonului mouse-ului.
 
-#### Constructia Obiectelor
+## Constructia Obiectelor
 
 Am inceput implementarea prin crearea obiectelor din joc. Pentru crearea **arcului**
 am considerat triunghiuri care prin unire sa creeze cercul. Am aflat unghiul pe care
@@ -32,7 +32,7 @@ ulterior, iar pentru aratarea vietilor ramase am folosit un patrat rotit, obtina
 un romb, care urmeaza sa fie usor scalat.
 <br>
 
-#### Implementarea Jocului
+## Implementarea Jocului
 Arcul este pozitionat la (0, 360) initial, putand fi miscat in sus si in jos pe axa
 Oy la apasarea tastelor ```W / S```. Acesta se roteste dupa pozitia mouse-ului.
 Sageata este si ea pozitionata ca arcul si se poate roti dupa mouse. Unghiul este 
